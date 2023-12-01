@@ -1,0 +1,166 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+/* header */
+.header {
+  width: 100%;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  font-weight: 600;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  background-color: #ecd619;
+  padding: 0 40px;
+}
+.logo-image {
+  width: 50px;
+  height: 100%;
+  overflow: hidden;
+}
+.logo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.logo-tittle {
+  font-size: large;
+  margin-left: 20px;
+}
+.logo-tittle h3 {
+  font-family: "Dancing script", cursive;
+  font-size: large;
+}
+.menu {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  background-color: #bd2031;
+}
+.menu > ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.menu > ul > li:hover {
+  color: #ecd619;
+}
+.menu > ul > li {
+  color: #ffff;
+  display: flex;
+  position: relative;
+  padding: 10px 20px;
+}
+.menu ul li i {
+  font-size: small;
+  margin-left: 10px;
+}
+/* menu arrow */
+.fa-chevron-downs {
+  font-size: xx-large;
+  margin: 5px;
+}
+.historical-line,
+.data,
+.figure {
+  padding: 10px;
+  position: absolute;
+  top: 100%;
+  background: #bd2031;
+  font-size: small;
+  display: none;
+}
+.historical-line li,
+.data li,
+.figure li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ffff;
+}
+.historical-line li:hover,
+.data li:hover,
+.figure li:hover {
+  color: #ecd619;
+}
+.hover-historical:hover .historical-line {
+  display: block;
+}
+.hover-data:hover .data {
+  display: block;
+}
+.hover-figure:hover .figure {
+  display: block;
+}
+.menu > ul .fa-search {
+  font-size: large;
+}
+.search {
+  position: relative;
+}
+.input-search {
+  position: absolute;
+  top: 100%;
+  left: -100%;
+  background-color: #bd2031;
+  padding: 5px;
+  margin: 15px -30px;
+  border-radius: 10px;
+  display: none;
+}
+.input-search input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+/* main-container */
+.main-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* timeline */
+.slide {
+  border: 1px solid #ebefef;
+  height: 250px;
+}
+.slide-menu {
+  padding: 20px;
+  border-bottom: dashed;
+  border-width: 1px;
+  display: flex;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+.slide-menu h3 {
+  display: inline-block;
+  flex: 1 0 25%;
+  margin: 0 25px;
+  font-size: 15px;
+  color: #a7adad;
+}
+.slide-content {
+  padding: 15px;
+}
+
+/* main content */
+.main-content {
+
+}
+.image-content {
+
+}
+.content{
+  
+}
+/* footer */
