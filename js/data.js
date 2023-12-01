@@ -53,7 +53,7 @@ let main=[
   {
      image:"assets/hoalu.jpg",
      title:"Cố đô Hoa Lư",
-     content:"Cố đô Hoa Lư là quần thể di tích quốc gia đặc biệt quan trọng của Việt Nam đồng thời là một trong 4 vùng lõi của quần thể di sản thế giới Tràng An đã được UNESCO công nhận. Hệ thống di tích ở Hoa Lư liên quan đến sự nghiệp của các nhân vật lịch sử thuộc ba triều đại nhà Đinh, nhà Tiền Lê và khởi đầu nhà Lý, tính từ Đinh Tiên Hoàng đến Lý Thái Tông trong lịch sử.[1][2] Hoa Lư là kinh đô đầu tiên của nhà nước phong kiến Trung ương tập quyền ở Việt Nam với các dấu ấn lịch sử: thống nhất giang sơn, đánh Tống - dẹp Chiêm và phát tích quá trình định đô Hà Nội.[3] Năm 1010 vua Lý Thái Tổ dời kinh đô từ Hoa Lư (Ninh Bình) về Thăng Long (Hà Nội), Hoa Lư trở thành Cố đô. Các triều vua Lý, Trần, Lê, Nguyễn sau đó dù không đóng đô ở Hoa Lư nữa nhưng vẫn cho tu bổ và xây dựng thêm ở đây nhiều công trình kiến trúc như đền, lăng, đình, chùa, phủ… Khu di tích lịch sử Cố đô Hoa Lư hiện nay có diện tích quy hoạch 13,87 km² thuộc tỉnh Ninh Bình. Với bề dày thời gian hơn 1000 năm, Cố đô Hoa Lư là nơi lưu trữ các di tích lịch sử qua nhiều thời đại.",
+     content:"Quần thể di tích Cố đô Hoa Lư là hệ thống các di tích về kinh đô Hoa Lư của nước Đại Cồ Việt trong lịch sử Việt Nam. Khu di tích hiện thuộc địa bàn tỉnh Ninh Bình, là một trong những di tích quốc gia đặc biệt quan trọng của Việt Nam và cũng là một trong ba vùng lõi của quần thể di sản thế giới Tràng An đã được UNESCO công nhận. Hệ thống di tích ở Hoa Lư liên quan đến sự nghiệp của các nhân vật lịch sử thuộc ba triều đại nhà Đinh, nhà Tiền Lê và khởi đầu nhà Lý, tính từ Đinh Tiên Hoàng đến Lý Thái Tổ trong lịch sử.[1] Hoa Lư là kinh đô đầu tiên của nhà nước phong kiến Trung ương tập quyền ở Việt Nam với các dấu ấn lịch sử: thống nhất giang sơn, đánh Tống - dẹp Chiêm và phát tích quá trình định đô Hà Nội",
   },
   {
      image:"assets/dinhdoclap.jpg",
@@ -80,7 +80,53 @@ let main=[
      title:"Hồ Hoàn Kiếm",
      content:"Hồ Hoàn Kiếm còn được gọi là Hồ Gươm (trong bản đồ Hà Nội năm 1886, hồ này được gọi là Hồ Hoàn Gươm - Lac de Hoan Guom), là một hồ nước ngọt tự nhiên của thành phố Hà Nội. Hồ có diện tích khoảng 12 ha[2]. Trước kia, hồ còn có các tên gọi là hồ Lục Thủy (vì nước có màu xanh quanh năm), hồ Thủy Quân (dùng để duyệt thủy binh), hồ Tả Vọng và Hữu Vọng (trong thời Lê mạt). Tên gọi Hoàn Kiếm xuất hiện vào đầu thế kỷ 15 gắn với truyền thuyết vua Lê Lợi trả gươm báu cho Rùa thần. Tên hồ được lấy để đặt cho một quận trung tâm của Hà Nội (quận Hoàn Kiếm) và là hồ nước duy nhất của quận này cho đến ngày nay.",
   },
+];
 
- 
-
+let herro= [
+  {
+    name:"Hùng Vương",
+    content:"Hùng Vương ( vua Hùng ) là vị vua của nhà nước Văn Lang của người Lạc Việt. Hùng Vương là con trai của Lạc Long Quân, lên ngôi vào năm 2879 trước công nguyên đặc quốc hiệu Văn Lang.",
+    image:"assets/vuahung.jpg"
+  },
+  {
+    name:"Hai Bà Trưng",
+    content:"Hai Bà Trưng tức Trưng Trắc, Trưng Nhị là 2 vị nữ anh hùng đầu tiên của dân tộc Việt Nam. Là thủ lĩnh khởi binh chống lại ách đô hộ tàn bạo, độc ác của nhà Đông Hán thuộc Trung Quốc.",
+    image:"assets/haibatrung.jpg"
+  },
+  {
+    name:"Ngô Quyền",
+    content:"Ngô Quyền sinh năm 898 ở làng Đường Lâm, còn được biết đến với tên gọi Tiền Ngô Vương là vị vua đầu tiên của nhà Ngô trong lịch sử Việt Nam.",
+    image:"assets/ngoquyen.jpg"
+  },
+  {
+    name:"Lý Công Uẩn",
+    content:"Lý Thái Tổ tức Lý Công Uẩn người sáng lập ra nhà Lý có công dời đô từ Hoa Lư về Thăng Long ( Hà Nội ngày nay ).",
+    image:"assets/lyconguan.jpg"
+  },
+  {
+    name:"Lý Thường Kiệt",
+    content:"Lý Thường Kiệt là một danh tướng vĩ đại qua 3 triều nhà Lý có công lớn trong việc đánh bại quân Tống xâm lược vào năm 1075 - 1077.",
+    image:"assets/lythuongkiet.jpg"
+  },
+  {
+    name:"Trần Hưng Đạo",
+    content:"Trần Hưng Đạo là vi tướng tài, 3 lần chỉ huy nhân dân đánh tan quân Mông - Nguyên dưới thời Hốt Tất Liệt là một trong chiến thắng vĩ đại trong lịch sử thế giới.",
+    image:"assets/tranhungdao.jpg"
+  },
+  {
+    name:"Lê Lợi",
+    content:"Lê Thái Tổ tức Lê Lợi là người khởi xướng cuộc khởi nghĩa Lam Sơn chống quân nhà Mình lập ra nhà Hậu Lê. Ông cũng là nhân vật nổi tiếng trong truyền thuyết Hồ Gươm, một sự tích của dân gian Việt Nam.",
+    image:"assets/leloi.jpg"
+  },
+  {
+    name:"Nguyễn Huệ",
+    content:"Nguyễn Huệ là vị hoàng đế thứ 2 của nhà Tây Sơn, ông đã đánh dẹp vua Lê, chúa Trịnh và chúa Nguyễn giúp thống nhất Việt Nam. Đồng thời đánh bại quân Xiêm và quân Thành lập ra Nhà Tây Sơn.",
+    image:"assets/nguyenhue.jpg"
+  },
+  {
+    name:"Hồ Chí Minh",
+    content:"Hồ Chí Minh là vị lãnh tụ của phong trào Việt Nam thời Pháp thuộc, là người sáng lập Đảng Cộng sản Đông Dương và là người khai sinh ra nước Việt Nam Dân Chủ Cộng Hòa.",
+    image:"assets/hochiminh.jpg"
+  },
+  
 ]

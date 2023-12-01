@@ -1,4 +1,4 @@
-// render giao diện
+
 let titleMenu = data.map(function (data, index) {
   return `<h3 data-index="${index}">${data.titleMenu}</h3>`;
 });
@@ -74,4 +74,20 @@ let newmain = main.map(function (data) {
 let maincontent = document.querySelector(".main-content");
 maincontent.innerHTML = newmain.join("");
 
-// phân trang
+// hero
+let herroData = herro.map(function (data1) {
+  return`<div class="herro-card">
+  <div class="herro-image">
+      <img src="${data1.image}" alt="">
+      <div class="hero-hover">
+          <div class="herro-content">
+              <p>${data1.content}</p>
+              <h3>${data1.name}</h3>
+          </div>
+      </div>
+  </div>
+</div>`
+})
+console.log(herroData);
+let herro = document.querySelector(".herro");
+herro.innerHTML = herroData.join("");

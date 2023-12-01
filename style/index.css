@@ -6,8 +6,12 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   outline: none;
+  letter-spacing: 1px;
 }
 /* header */
+.container {
+  /* background-color: #ecce92; */
+}
 .header {
   width: 100%;
 }
@@ -124,11 +128,63 @@
   border: none;
 }
 /* main-container */
+.about {
+  display: flex;
+  width: 100%;
+  margin: 50px 0;
+}
+.about-image {
+  width: 50%;
+  height: 500px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 10px;
+}
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-content {
+  width: 50%;
+  height: 500px;
+}
+.about-title {
+  margin-bottom: 30px;
+}
+.about-text {
+  padding: 0 15%;
+}
+.about-text p {
+  line-height: 1.5;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+.about-title h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.line-about {
+  width: 10%;
+  height: 5px;
+  border: 1px solid;
+}
 .main-container {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
 }
+.history-line {
+}
+.history-line-title {
+  width: 100%;
+  text-align: center;
+  margin: 30px;
+}
+.history-line-title h2 {
+  font-size: 2rem;
+}
+
 /* timeline */
 .slide {
   border: 1px solid #ebefef;
@@ -154,7 +210,9 @@
 }
 
 /* main content */
-
+.main-title {
+  margin: 30px 0;
+}
 .content-card {
   display: flex;
   height: 400px;
@@ -196,4 +254,66 @@
   color: #fff;
   cursor: pointer;
 }
+/* herro */
+.herro {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.herro-card {
+  width: 33%;
+  height: 300px;
+  padding: 20px;
+}
+.herro-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.herro-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.hero-hover {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(70, 66, 66, 0.5);
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+}
+.herro-content {
+  padding: 10px;
+  border-radius: 20px;
+  color: #fff;
+}
+.hero-hover:hover p {
+  opacity: 1;
+}
+.hero-hover:hover .herro-content {
+  border: 1px solid;
+}
+.herro-content p {
+  line-height: 1.5;
+  text-align: center;
+  opacity: 0;
+}
+.herro-content h3 {
+  text-align: center;
+  margin: 15px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
 /* footer */
+.footer {
+  width: 100%;
+  height: 100px;
+  border: 1px solid;
+}
