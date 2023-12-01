@@ -27,8 +27,6 @@ document.querySelectorAll(".slide-menu h3").forEach(function (element) {
   });
 });
 
-
-
 //  scrol đến phần tử
 const clicks = document.querySelectorAll(".slide-menu h3");
 const slideMenu = document.querySelector(".slide-menu");
@@ -39,7 +37,7 @@ clicks.forEach((element, index) => {
     const rect = element.getBoundingClientRect();
     const khoangCanh =
       rect.left - timeLineContainer.getBoundingClientRect().left;
-      slideMenu.scrollLeft += khoangCanh;
+    slideMenu.scrollLeft += khoangCanh;
   });
 });
 
@@ -47,10 +45,33 @@ clicks.forEach((element, index) => {
 let search = document.querySelector(".fa-search");
 let input = document.querySelector(".input-search");
 search.addEventListener("click", () => {
-  if ((input.style.display === "block")) {
+  if (input.style.display === "block") {
     input.style.display = "none";
   } else {
     input.style.display = "block";
   }
 });
 // -------------------------------------------
+// render giao diện
+let newmain = main.map(function (data) {
+  return `<div class="content-card">
+             <div class="image-content">
+                <img src="${data.image}" alt="">
+            </div>
+            <div class="content">
+                  <div class="title-content">
+                    <h3>${data.title}</h3>
+                </div>
+                <div class="paragraph">
+                    <p>${data.content}</p>
+                    <span>Xem thêm</span>
+                </div>
+            </div>      
+  </div>
+            
+  `;
+});
+let maincontent = document.querySelector(".main-content");
+maincontent.innerHTML = newmain.join("");
+
+// phân trang
