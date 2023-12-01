@@ -1,4 +1,4 @@
-let timeline=[
+let data=[
     {
       titleMenu:"Hồng Bàng-Văn Lang",  
       titleContent:"Hồng Bàng-Văn Lang",  
@@ -49,6 +49,6 @@ let timeline=[
     },
 ];
 
-let content = [
-
+let main=[
+  
 ]
