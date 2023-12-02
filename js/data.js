@@ -82,7 +82,7 @@ let main=[
   },
 ];
 
-let herro= [
+let herroData= [
   {
     name:"Hùng Vương",
     content:"Hùng Vương ( vua Hùng ) là vị vua của nhà nước Văn Lang của người Lạc Việt. Hùng Vương là con trai của Lạc Long Quân, lên ngôi vào năm 2879 trước công nguyên đặc quốc hiệu Văn Lang.",
@@ -130,3 +130,4 @@ let herro= [
   },
   
 ]
+

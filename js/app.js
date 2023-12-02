@@ -75,7 +75,7 @@ let maincontent = document.querySelector(".main-content");
 maincontent.innerHTML = newmain.join("");
 
 // hero
-let herroData = herro.map(function (data1) {
+let newherro = herroData.map(function (data1) {
   return`<div class="herro-card">
   <div class="herro-image">
       <img src="${data1.image}" alt="">
@@ -90,4 +90,4 @@ let herroData = herro.map(function (data1) {
 })
 console.log(herroData);
 let herro = document.querySelector(".herro");
-herro.innerHTML = herroData.join("");
+herro.innerHTML = newherro.join("");
