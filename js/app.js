@@ -37,8 +37,7 @@ const timeLineContainer = document.querySelector(".time-line-container");
 clicks.forEach((element, index) => {
   element.addEventListener("click", () => {
     const rect = element.getBoundingClientRect();
-    const khoangCanh =
-      rect.left - timeLineContainer.getBoundingClientRect().left;
+    const khoangCanh = rect.left - timeLineContainer.getBoundingClientRect().left;
     slideMenu.scrollLeft += khoangCanh;
   });
 });
@@ -119,3 +118,61 @@ let newherro = herroData.map(function (data1) {
 console.log(herroData);
 let herro = document.querySelector(".herro");
 herro.innerHTML = newherro.join("");
+
+// time line
+let timelineEl =  data.map(function (data1,index) {
+  if (index % 2 === 0) {
+      return `<div class="timeline-box timeline-left">
+      <div class="text-box">
+          <div class="timeline-title-inner">
+              <div class="timeline-time">
+                  <h3>đại cồ việt</h3>
+                  <div>03/12/2023</div>
+                  <a href="">Xem</a>
+              </div>
+          </div>
+          <div class="timeline-image">
+              <img src="assets/denhung.jpg" alt="">
+          </div>
+      </div>
+  </div>`;
+    } else {
+      return `<div class="timeline-box timeline-right">
+      <div class="text-box">                          
+          <div class="timeline-title-inner">
+              <div class="timeline-time">
+                  <h3>đại cồ việt</h3>
+                  <div>03/12/2023</div>
+                  <div>Xem</div>
+              </div>
+          </div>
+          <div class="timeline-image">
+              <img src="assets/denNgocSon.jpg" alt="">
+          </div>
+      </div>                         
+  </div>`;
+    }
+});
+let element = document.querySelector(".timeline-card");
+element.innerHTML = timelineEl.join("");
+
+// animate scroll timeline
+window.addEventListener("scroll", timelineActive);
+function timelineActive() {
+  var timelines = document.querySelectorAll(".timeline-box");
+  console.log(timelines);
+  for (var i = 0; i < timelines.length; i++) {
+    var windowHeight = window.innerHeight; // chieu cao cua view port
+    var elementTop = timelines[i].getBoundingClientRect().top; // đỉnh viewport đến top element
+    var elementVisible = 150; // khoảng nhìn thấy element
+    // console.log(
+    //   "windowHeigh",windowHeight,
+    //   "elementTop",elementTop,
+    //   "elementVisible",elementVisible,
+    //   elementTop < windowHeight - elementVisible,
+    // );
+    if (elementTop < windowHeight - elementVisible) {
+      timelines[i].classList.add("active");
+    }
+  }
+}
