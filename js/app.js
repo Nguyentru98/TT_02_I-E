@@ -15,6 +15,7 @@ let titleContent = data.map(function (data) {
 // seclect đến nội dung tương ứng
 let content = document.querySelector(".slide-content");
 content.innerHTML = titleContent[0];
+let currentIndex = 0;
 
 document.querySelectorAll(".slide-menu h3").forEach(function (element) {
   element.addEventListener("click", function () {
@@ -23,6 +24,7 @@ document.querySelectorAll(".slide-menu h3").forEach(function (element) {
     });
     element.style.color = "#bd2031";
     const index = parseInt(element.getAttribute("data-index"));
+    currentIndex = index;
     content.innerHTML = titleContent[index];
   });
 });
@@ -40,6 +42,32 @@ clicks.forEach((element, index) => {
     slideMenu.scrollLeft += khoangCanh;
   });
 });
+
+function prevSlide(event) {
+  if (!currentIndex) return;
+  const element = document.querySelector(`[data-index='${currentIndex}']`);
+  element.style.color = "#a7adad";
+  currentIndex -= 1;
+  const currentElement = document.querySelector(`[data-index='${currentIndex}']`);
+  content.innerHTML = titleContent[currentIndex];
+  currentElement.style.color = "#bd2031";
+  const rect = currentElement.getBoundingClientRect();
+  const khoangCanh = rect.left - timeLineContainer.getBoundingClientRect().left;
+  slideMenu.scrollLeft += khoangCanh;
+}
+
+function nextSlide(event) {
+  if (currentIndex >= data.length - 1) return;
+  const element = document.querySelector(`[data-index='${currentIndex}']`);
+  element.style.color = "#a7adad";
+  currentIndex += 1;
+  const prevElement = document.querySelector(`[data-index='${currentIndex}']`);
+  content.innerHTML = titleContent[currentIndex];
+  prevElement.style.color = "#bd2031";
+  const rect = prevElement.getBoundingClientRect();
+  const khoangCanh = rect.left - timeLineContainer.getBoundingClientRect().left;
+  slideMenu.scrollLeft += khoangCanh;
+}
 
 // serach
 let search = document.querySelector(".fa-search");

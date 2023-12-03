@@ -186,6 +186,15 @@
 .slide {
   border: 1px solid #ebefef;
   height: 250px;
+  position: relative;
+}
+.slide-arrown {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 9%;
 }
 .slide-menu {
   padding: 20px;
