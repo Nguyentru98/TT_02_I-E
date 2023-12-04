@@ -10,7 +10,13 @@
 }
 /* header */
 .container {
-  /* background-color: #f1e5cb; */
+  background-color: #f1e5cb;
+}
+.nav-menu-mb {
+    font-size: x-larger;
+}
+.nav-menu-mb i {
+
 }
 .header {
   width: 100%;
@@ -187,7 +193,7 @@
 }
 /* slide */
 .slide {
-  border: 1px solid #ebefef;
+  border: 1px solid  #f8db98; ;
   position: relative;
   height: 400px;
 }
@@ -197,7 +203,8 @@
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: 50%;
+  top: 65%;
+  z-index: 99999;
 }
 .slide-arrown span {
   font-size: xx-large;
@@ -226,24 +233,45 @@
   color: #a7adad;
 }
 .slide-content {
-  height: 80%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(225, 225, 225, 0.5);
+}
+.background-slide-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.background-slide-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.slide-content-inner {
+  width: 100%;
+  height: 100%;
   display: flex;
-  padding: 10px 100px;
+  position: absolute;
+  top: 20%;
+  padding: 50px 200px;
 }
 .slide-image,
 .slide-text {
-  padding: 10px;
   height: 100%;
   width: 50%;
   overflow: hidden;
   line-height: 1.5;
   text-transform: capitalize;
+  padding: 0 20px;
+}
+.slide-text {
+  color: #ffff;
 }
 .slide-image {
   border-radius: 20px;
 }
 .slide-image img {
-  width: 100% ;
+  width: 100%;
   height: 100%;
   border-radius: 20px;
   object-fit: cover;
@@ -253,6 +281,13 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+  margin-bottom: 100px;
+}
+.timeline-title {
+  width: 100%;
+  text-align: center;
+  margin: 50px 0;
+  font-size: xx-large;
 }
 .timeline {
   width: 100%;
@@ -260,11 +295,11 @@
 }
 .line-middle {
   width: 10px;
-  height: 90%;
+  height: 100%;
   background-color: #a7adad;
   position: absolute;
   left: 50%;
-  top: 10%;
+  top: 7%;
 }
 
 .timeline-left {
@@ -284,19 +319,20 @@
   display: flex;
   background-color: #c13445;
 }
-.timeline-title {
+.timeline-title-inner {
   width: 40%;
   height: 10%;
   color: #ffff;
   text-align: center;
+
 }
-.timeline-title h3 {
+.timeline-title-inner h3 {
   text-transform: uppercase;
 }
-.timeline-title small {
+.timeline-title-inner small {
   display: block;
 }
-.timeline-title a {
+.timeline-title-inner a {
   width: 50%;
   margin-left: 22%;
   color: #ffff;
@@ -442,11 +478,12 @@
 /* footer */
 .footer {
   width: 100%;
-  border: 1px solid;
+  border-top: 1px solid  #f8db98; ;
   text-align: center;
   height: 100px;
   line-height: 2;
   padding: 20px 0;
+  background-color: #f1e5cb;
 }
 .footer-icon i {
   padding: 0 10px;

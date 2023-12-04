@@ -6,15 +6,17 @@ menu.innerHTML = menuSlide.join("");
 
 let slideContent = data.map(function (data) {
   return `
-              
-                            <div class="slide-image">
-                            <img src="${data.image}" alt="">
+  <div class="background-slide-content">
+                                <img src="assets/background-slide.jpg" alt="">
                             </div>
-                            <div class="slide-text">
-                            <p>${data.content}</p>
+                            <div class="slide-content-inner">
+                                <div class="slide-image">
+                                <img src="${data.image}" alt="">
+                                </div>
+                                <div class="slide-text">
+                                <p>${data.content}</p>
+                                </div>
                             </div>
-                      
-          
           `;
 });
 
@@ -110,7 +112,7 @@ let timelineEl = historicalLine.map(function (data1, index) {
   if (index % 2 === 0) {
     return `<div class="timeline-box timeline-left">
     <div class="text-box">
-        <div class="timeline-title">
+        <div class="timeline-title-inner">
         <h3>${data1.title}</h3>
         <small>${data1.time}</small>
         <a href="">Xem</a>
@@ -128,7 +130,7 @@ let timelineEl = historicalLine.map(function (data1, index) {
   } else {
     return `<div class="timeline-box timeline-right">
     <div class="text-box">
-    <div class="timeline-title">
+    <div class="timeline-title-inner">
     <h3>${data1.title}</h3>
     <small>${data1.time}</small>
     <a href="">Xem</a>

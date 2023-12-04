@@ -40,7 +40,7 @@ let data=[
     },
     {
       titleMenu:"Dinh Độc Lập - TPHCM",  
-      image:"assets/dt_dinh-doc-lap.png",  
+      image:"assets/dinhdoclap.jpg",  
       content:`Dinh Độc Lập, còn được biết đến là dinh Thống Nhất, là nơi Tổng thống Việt Nam cộng hòa từng làm việc. Đây cũng là nơi lưu giữ nhiều kỷ vật và sự kiện quan trọng của lịch sử Việt Nam.`
     },
 ];
