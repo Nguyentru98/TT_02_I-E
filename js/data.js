@@ -1,51 +1,47 @@
 let data=[
     {
-      titleMenu:"Hồng Bàng-Văn Lang",  
-      titleContent:"Hồng Bàng-Văn Lang",  
-      content:"Thời kỳ Hồng Bàng theo truyền thuyết và dã sử cho rằng bắt đầu từ năm 2879 TCN, là niên đại của Kinh Dương Vương, với quốc hiệu Xích Quỷ. Lãnh thổ của quốc gia dưới thời Kinh Dương vương rộng lớn, phía bắc tới sông Dương Tử (cả vùng hồ Động Đình), phía nam tới nước Hồ Tôn (Chiêm Thành), phía đông là Đông Hải (một phần của Thái Bình Dương), phía tây là Ba Thục (Tứ Xuyên, Trung Hoa ngày nay). Về sau người Việt chỉ thấy có ở miền Bắc Việt Nam ngày nay, có thể một phần do sự lấn áp của các tộc người Hoa Hạ từ phương Bắc",
+      titleMenu:"Đền Hùng - Phú Thọ",  
+      image:"assets/dt_denhung.jpg",  
+      content:`"Dù ai đi ngược về xuôi 
+      Nhớ ngày giỗ tổ mùng 10 tháng 3".
+      Bất kể nơi nào bạn đang ở, câu nói này luôn đánh thức lòng tự hào dân tộc và tình yêu quê hương. Đền Hùng, nằm ở tỉnh Phú Thọ, là nơi linh thiêng, tượng trưng cho tinh thần và truyền thống của người Việt Nam.`,
     }, 
     {
-      titleMenu:"Âu Lạc-Việt Nam",  
-      titleContent:"Âu Lạc-Việt Nam",  
-      content:"Theo hai bộ sử ký Đại Việt sử ký toàn thư (viết ở thế kỷ 15) và Đại Việt sử lược (viết ở thế kỷ 13), thì nhà nước Âu Lạc được Thục Phán (thủ lĩnh bộ tộc Âu Việt) thành lập vào năm 258 TCN sau khi đánh bại vị vua Hùng cuối cùng của nước Văn Lang, ông lên ngôi và lấy niên hiệu là An Dương Vương.An Dương Vương sát nhập lãnh thổ của Văn Lang và lãnh thổ của bộ tộc mình (Âu Việt) và hình thành nên một nhà nước mới là Âu Lạc (kết hợp giữa người Âu Việt và người Lạc Việt).Lãnh thổ Âu Lạc gồm lãnh cũ của bộ tộc Âu Việt ở phía bắc, mà ngày nay là một phần phía nam tỉnh Quảng Tây (Trung Quốc) và lãnh thổ của Văn Lang ở miền bắc Việt Nam. Âu Lạc có ranh giới phía bắc là sông Tả Giang (Quảng Tây) đến phía nam là dãy núi Hoành Sơn ở Hà Tĩnh hiện nay"
+      titleMenu:"Hồ Gươm - Hà Nội",  
+      image:"assets/hoguom.jpg",  
+      content:"Hồ Gươm, còn được gọi là Hồ Hoàn Kiếm, là biểu tượng của thủ đô Hà Nội. Được liên kết với một câu chuyện thần thoại về vị vua Lê Lợi, Hồ Gươm có diện tích lên tới 12ha. Xung quanh hồ là phố đi bộ, nơi dân tập thể dục và cuối tuần, Hồ Gươm đón hàng ngàn du khách đến vui chơi và tham quan"
     },
     {
-      titleMenu:"Bắc Thuộc Lần I",  
-      titleContent:"Bắc Thuộc Lần I",  
-      content:"Thời kỳ Bắc thuộc lần thứ nhất trong lịch sử Việt Nam kéo dài từ năm 218 TCN hoặc 179 TCN hoặc 111 TCN đến năm 39, dưới sự cai trị của phong kiến Trung Quốc."
+      titleMenu:"Cố đô Hoa Lư - Ninh Bình",  
+      image:"assets/hoalu.jpg",  
+      content:"Nếu bạn muốn trải nghiệm một vùng đất nổi tiếng với cố đô cổ kính, hãy đến Ninh Bình và thăm Cố đô Hoa Lư. Đây là nơi từng là kinh đô đầu tiên của nước ta và nằm trên một mảnh đất có vị trí chiến lược rồng cuộn hổ ngồi. Đến đây, bạn có thể cảm nhận sự phồn thịnh và vẻ đẹp của lịch sử Việt Nam"
     },
     {
-      titleMenu:"Trưng Nữ Vương",  
-      titleContent:"Trưng Nữ Vương",  
-      content:"Hai Bà Trưng (40 - 43) là thời kỳ xen giữa Bắc thuộc lần 1 và Bắc thuộc lần 2 trong lịch sử Việt Nam. Đây là tên gọi chung của hai chị em Trưng Trắc và Trưng Nhị, là anh hùng dân tộc của người Việt, những thủ lĩnh khởi binh chống lại nhà Đông Hán của Trung Quốc, lập ra một quốc gia với kinh đô tại Mê Linh và tự phong là Nữ vương."
+      titleMenu:"Thành Cổ Loa - Đông Anh",  
+      image:"assets/dt_thanh-co-loa.webp",  
+      content:"Thành Cổ Loa nổi tiếng với kiến trúc độc đáo hình vòng ốc và câu chuyện về Mỵ Châu - Trọng Thủy, Giếng Ngọc, và vua An Dương Vương. Mỗi năm, vào ngày 6 tháng Giêng, Thành Cổ Loa tổ chức lễ hội với nhiều hoạt động thú vị, thu hút du khách đến tham dự."
     },
     {
-      titleMenu:"Bắc Thuộc Lần II",  
-      titleContent:"Bắc Thuộc Lần II",  
-      content:`Thời kỳ Bắc thuộc lần thứ hai trong lịch sử Việt Nam kéo dài từ năm 43 đến năm 543. Thời kỳ này bắt đầu khi Mã Viện theo lệnh Hán Quang Vũ Đế nhà Đông Hán đánh chiếm lại bộ Giao Chỉ từ tay Trưng Vương, kéo dài đến khi Lý Bí khởi binh đánh đuổi thứ sử[1] nhà Lương là Tiêu Tư năm 542 rồi lập ra nước Vạn Xuân năm 544.
-      Thời kỳ Bắc thuộc lần thứ 2 kéo dài khoảng 500 năm.`
+      titleMenu:"Văn Miếu Quốc Tử Giám - Hà Nội",  
+      image:"assets/dt_van-mieu-quoc-tu-giam.jpg",  
+      content:`Văn Miếu Quốc Tử Giám là một di tích lịch sử nổi tiếng tại Hà Nội, là nơi đã đào tạo hàng ngàn nhân tài trong lịch sử Việt Nam. Nơi đây vẫn là nơi các sĩ tử đến dâng hương và xin chữ may mắn cho năm học mới. `
     },
     
     {
-      titleMenu:"Nhà Ngô",  
-      titleContent:"Nhà Ngô",  
-      content:`Nhà Ngô 26 năm (939-965), kinh đô Cổ Loa (Đông Anh, Hà Nội)
-      Năm 938, Ngô Quyền tập hợp lực lượng từ Ái châu ra đánh Kiều Công Tiễn. Công Tiễn sai sứ sang nước Nam Hán xin quân cứu viện. Vua Nam Hán là Lưu Nghiễm cho con là Vạn vương Hoằng Tháo đem quân sang cứu, tự mình đóng quân làm thanh viện. Ngô Quyền hạ thành Đại La, giết Công Tiễn rồi bày trận trên sông Bạch Đằng đón quân Nam Hán.      
-      Tháng 11 năm 938, quân Hoằng Tháo bị Ngô Quyền đánh tan trong trận Bạch Đằng. Hoằng Tháo bị giết chết. Năm 939, Ngô Quyền lên ngôi, tức là Tiền Ngô Vương, đóng đô ở Cổ Loa, lập Dương thị làm hoàng hậu.`
+      titleMenu:"Cố đô Huế ",  
+      image:"assets/dt_co-do-hue.jpg",  
+      content:`Quần thể di tích Cố đô Huế là một trong những di sản văn hóa thế giới. Nơi này bao gồm nhiều công trình kiến trúc lịch sử quan trọng, bao gồm cả Cung điện Hoàng gia, Thiên Mụ Pagoda và nhiều lăng tẩm của các vị vua triều Nguyễn.`
     },
     {
-      titleMenu:"Nhà Đinh",  
-      titleContent:"Nhà Đinh",  
-      content:`Nhà Đinh (968-980) là triều đại phong kiến trong lịch sử Việt Nam bắt đầu năm 968, sau khi Đinh Tiên Hoàng dẹp xong loạn 12 sứ quân thống nhất đất nước và kết thúc năm 980 khi con của Đinh Tiên Hoàng là Đinh Phế Đế nhường cho Lê Hoàn.
-      Nhà Đinh là triều đại mở đầu chế độ phong kiến tập quyền và thời kỳ tự chủ với một chế độ đứng đầu bởi một Hoàng đế của nước Việt Nam. Vương triều nhà Đinh đã mở nền chính thống cho thời đại phong kiến độc lập nên trong các bộ chính sử kể từ Đại Việt sử ký toàn thư thế kỷ XV, Đại Việt sử ký tiền biên thế kỷ XVIII đến Khâm định Việt sử thông giám cương mục thế kỷ XIX; triều đại này đều được các tác giả lấy làm mốc mở đầu phần Bản kỷ hoặc Chính biên.     
+      titleMenu:"Đền Ngọc Sơn - Hà Nội",  
+      image:"assets/dt_den-ngoc-son.jpg",  
+      content:`Đền Ngọc Sơn nằm trên một hòn đảo nhỏ giữa Hồ Hoàn Kiếm và có kiến trúc đẹp mắt. Cầu Thê Húc nối liền đảo với bờ và là một trong những biểu tượng nổi bật của Hà Nội. Đến đây, bạn có thể khám phá các di tích lịch sử và tận hưởng không gian thanh bình giữa trung tâm thủ đô    
       Tiếp đến, việc xưng đế hiệu Đại Thắng Minh Hoàng đế của Đinh Tiên Hoàng mang ý thức lớn về sự tự tôn của nước Việt,`
     },
     {
-      titleMenu:"Nhà Tiền Lê",  
-      titleContent:"Nhà Tiền Lê",  
-      content:`Nhà Tiền Lê, kinh đô Hoa Lư (29 năm, 980 - 1009)
-      Nhà Tiền Lê bắt đầu khi Đinh Phế Đế nhường ngôi cho Lê Hoàn vào năm 980, trải qua ba đời quân chủ và chấm dứt khi Lê Long Đĩnh qua đời. Quốc hiệu vẫn là Đại Cồ Việt.
-      Triều đại này được kế tục bởi nhà Lý, được sáng lập bởi Lý Công Uẩn.`
+      titleMenu:"Dinh Độc Lập - TPHCM",  
+      image:"assets/dt_dinh-doc-lap.png",  
+      content:`Dinh Độc Lập, còn được biết đến là dinh Thống Nhất, là nơi Tổng thống Việt Nam cộng hòa từng làm việc. Đây cũng là nơi lưu giữ nhiều kỷ vật và sự kiện quan trọng của lịch sử Việt Nam.`
     },
 ];
 
@@ -131,3 +127,66 @@ let herroData= [
   
 ]
 
+let historicalLine = [
+  {
+    title:"Bắc Thuộc Lần Thứ Nhất",
+    time:"Thời Gian: (208 TCN - 39)",
+    image: "assets/l_thoi-ki-bac-thuoc-1.webp",
+  },
+  {
+    title:"Trưng Nữ Vương",
+    time:"Thời Gian: (40 - 43)",
+    image: "assets/haibatrung.jpg",
+  },
+  {
+    title:"Bắc Thuộc Lần Thứ Hai",
+    time:"Thời Gian: (43 - 543)",
+    image: "assets/l_tki-bac-thuoc-2.jpg",
+  },
+  {
+    title:"Nhà Tiền Lý",
+    time:"Thời Gian: (544 - 602)",
+    image: "assets/l_nha-tien-ly.jpg",
+  },
+  {
+    title:"Bắc Thuộc Lần Thứ Ba",
+    time:"Thời Gian: (602 - 905)",
+    image: "assets/l_Tki_bac_thuoc-3.png",
+  },
+  {
+    title:"Tự Chủ",
+    time:"Thời Gian: (905 - 938)",
+    image: "assets/l_tu-chu.webp",
+  },
+  {
+    title:"Phong Kiến Độc Lập",
+    time:"Thời Gian: (939 - 1409)",
+    image: "assets/l_tki-phong-kien.jpg",
+  },
+  {
+    title:"Chiến Tranh Tây Sơn",
+    time:"Thời Gian: (1771 - 1802)",
+    image: "assets/l_chietranh-tay-son.jpg",
+  },
+  {
+    title:"Pháp Đô Hộ Việt Nam",
+    time:"Thời Gian: (1883 - 1945)",
+    image: "assets/l_phap-do-ho.jpg",
+  },
+  {
+    title:"Nước Việt Nam",
+    time:"Thời Gian: (1945 - 1976)",
+    image: "assets/l_ho-chu-tich.jpg",
+  },
+  {
+    title:"Chiến Tranh Việt Nam",
+    time:"Thời Gian: (1955 - 1975)",
+    image: "assets/l_chientranh-Vn.jpg",
+  },
+  {
+    title:"Cộng Hoà Xã Hội Chủ Nghĩa Việt Nam",
+    time:"Thời Gian: (1976 - Đến nay)",
+    image: "assets/l_logo-Vn.jpg",
+  }
+
+]

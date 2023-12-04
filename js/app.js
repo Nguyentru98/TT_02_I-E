@@ -1,20 +1,26 @@
-
-let titleMenu = data.map(function (data, index) {
+let menuSlide = data.map(function (data, index) {
   return `<h3 data-index="${index}">${data.titleMenu}</h3>`;
 });
 let menu = document.querySelector(".slide-menu");
-menu.innerHTML = titleMenu.join("");
+menu.innerHTML = menuSlide.join("");
 
-let titleContent = data.map(function (data) {
+let slideContent = data.map(function (data) {
   return `
-          <h3>${data.titleContent}</h3>
-          <p>${data.content}</p>
+              
+                            <div class="slide-image">
+                            <img src="${data.image}" alt="">
+                            </div>
+                            <div class="slide-text">
+                            <p>${data.content}</p>
+                            </div>
+                      
+          
           `;
 });
 
 // seclect đến nội dung tương ứng
 let content = document.querySelector(".slide-content");
-content.innerHTML = titleContent[0];
+content.innerHTML = slideContent[0];
 let currentIndex = 0;
 
 document.querySelectorAll(".slide-menu h3").forEach(function (element) {
@@ -25,7 +31,7 @@ document.querySelectorAll(".slide-menu h3").forEach(function (element) {
     element.style.color = "#bd2031";
     const index = parseInt(element.getAttribute("data-index"));
     currentIndex = index;
-    content.innerHTML = titleContent[index];
+    content.innerHTML = slideContent[index];
   });
 });
 
@@ -37,7 +43,8 @@ const timeLineContainer = document.querySelector(".time-line-container");
 clicks.forEach((element, index) => {
   element.addEventListener("click", () => {
     const rect = element.getBoundingClientRect();
-    const khoangCanh = rect.left - timeLineContainer.getBoundingClientRect().left;
+    const khoangCanh =
+      rect.left - timeLineContainer.getBoundingClientRect().left;
     slideMenu.scrollLeft += khoangCanh;
   });
 });
@@ -47,8 +54,10 @@ function prevSlide(event) {
   const element = document.querySelector(`[data-index='${currentIndex}']`);
   element.style.color = "#a7adad";
   currentIndex -= 1;
-  const currentElement = document.querySelector(`[data-index='${currentIndex}']`);
-  content.innerHTML = titleContent[currentIndex];
+  const currentElement = document.querySelector(
+    `[data-index='${currentIndex}']`
+  );
+  content.innerHTML = slideContent[currentIndex];
   currentElement.style.color = "#bd2031";
   const rect = currentElement.getBoundingClientRect();
   const khoangCanh = rect.left - timeLineContainer.getBoundingClientRect().left;
@@ -61,7 +70,7 @@ function nextSlide(event) {
   element.style.color = "#a7adad";
   currentIndex += 1;
   const prevElement = document.querySelector(`[data-index='${currentIndex}']`);
-  content.innerHTML = titleContent[currentIndex];
+  content.innerHTML = slideContent[currentIndex];
   prevElement.style.color = "#bd2031";
   const rect = prevElement.getBoundingClientRect();
   const khoangCanh = rect.left - timeLineContainer.getBoundingClientRect().left;
@@ -78,32 +87,9 @@ search.addEventListener("click", () => {
     input.style.display = "block";
   }
 });
-// -------------------------------------------
-// render giao diện
-let newmain = main.map(function (data) {
-  return `<div class="content-card">
-             <div class="image-content">
-                <img src="${data.image}" alt="">
-            </div>
-            <div class="content">
-                  <div class="title-content">
-                    <h3>${data.title}</h3>
-                </div>
-                <div class="paragraph">
-                    <p>${data.content}</p>
-                    <span>Xem thêm</span>
-                </div>
-            </div>      
-  </div>
-            
-  `;
-});
-let maincontent = document.querySelector(".main-content");
-maincontent.innerHTML = newmain.join("");
-
 // hero
 let newherro = herroData.map(function (data1) {
-  return`<div class="herro-card">
+  return `<div class="herro-card">
   <div class="herro-image">
       <img src="${data1.image}" alt="">
       <div class="hero-hover">
@@ -113,45 +99,51 @@ let newherro = herroData.map(function (data1) {
           </div>
       </div>
   </div>
-</div>`
-})
+</div>`;
+});
 console.log(herroData);
 let herro = document.querySelector(".herro");
 herro.innerHTML = newherro.join("");
 
 // time line
-let timelineEl =  data.map(function (data1,index) {
+let timelineEl = historicalLine.map(function (data1, index) {
   if (index % 2 === 0) {
-      return `<div class="timeline-box timeline-left">
-      <div class="text-box">
-          <div class="timeline-title-inner">
-              <div class="timeline-time">
-                  <h3>đại cồ việt</h3>
-                  <div>03/12/2023</div>
-                  <a href="">Xem</a>
-              </div>
-          </div>
-          <div class="timeline-image">
-              <img src="assets/denhung.jpg" alt="">
-          </div>
-      </div>
+    return `<div class="timeline-box timeline-left">
+    <div class="text-box">
+        <div class="timeline-title">
+        <h3>${data1.title}</h3>
+        <small>${data1.time}</small>
+        <a href="">Xem</a>
+        </div>
+        <div class="timeline-image">
+        <div class="timeline-background">
+        <img src="assets/thanhchi.jpg" alt="">
+        </div>
+        <div class="timeline-inner">
+        <img src="${data1.image}" alt="">
+        </div>
+        </div>
+        </div>
   </div>`;
-    } else {
-      return `<div class="timeline-box timeline-right">
-      <div class="text-box">                          
-          <div class="timeline-title-inner">
-              <div class="timeline-time">
-                  <h3>đại cồ việt</h3>
-                  <div>03/12/2023</div>
-                  <div>Xem</div>
-              </div>
-          </div>
-          <div class="timeline-image">
-              <img src="assets/denNgocSon.jpg" alt="">
-          </div>
-      </div>                         
+  } else {
+    return `<div class="timeline-box timeline-right">
+    <div class="text-box">
+    <div class="timeline-title">
+    <h3>${data1.title}</h3>
+    <small>${data1.time}</small>
+    <a href="">Xem</a>
+</div>
+<div class="timeline-image">
+    <div class="timeline-background">
+        <img src="assets/thanhchi.jpg" alt="">
+    </div>
+    <div class="timeline-inner">
+        <img src="${data1.image}" alt="">
+    </div>
+</div>
+                            </div>        
   </div>`;
-    }
+  }
 });
 let element = document.querySelector(".timeline-card");
 element.innerHTML = timelineEl.join("");
