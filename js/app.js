@@ -170,3 +170,15 @@ function timelineActive() {
     }
   }
 }
+
+// nut menu mobile
+
+let menuMb= document.querySelector(".nav-menu-mb") 
+let listMenuMb = document.querySelector(".menu-mobile")
+menuMb.addEventListener("click",()=> {
+  if(listMenuMb.style.display === "block") {
+    listMenuMb.style.display ="none"
+  }else {
+     listMenuMb.style.display ="block"
+  }
+})
