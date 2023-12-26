@@ -350,6 +350,10 @@
   border-radius: 20px;
   border: 1px solid;
 }
+.timeline-title-inner a:hover {
+  background-color: #a7adad;
+  color: #bd2031;
+}
 .timeline-image {
   width: 60%;
   height: 100%;
